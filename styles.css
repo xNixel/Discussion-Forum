@@ -1,0 +1,218 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logoutForm button {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logoutForm button:hover {
+    background-color: #c82333;
+}
+
+.logoutForm button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
+}
+
+/* Container and Form Styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-post {
+    margin-bottom: 20px;
+}
+
+.new-post h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.new-post textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.new-post button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-post button:hover {
+    background-color: #0056b3;
+}
+
+.new-post button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+/* Posts Styling */
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.post-header .post-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+/* Reaction Buttons Styling */
+.reactionButtons {
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+    margin-top: 10px;
+}
+
+.reactionButtons button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reactionButtons button:hover {
+    background-color: #0056b3;
+}
+
+.reactionButtons button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+.replyForm {
+    margin-top: 10px;
+}
+
+.replyForm textarea {
+    width: calc(100% - 10px);
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.replies {
+    margin-top: 15px;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+.reply {
+    margin-bottom: 10px;
+}
+
+/* Accessibility Enhancements */
+:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .logoutForm button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .new-post h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .post-header h3 {
+        font-size: 16px;
+    }
+
+    .post-header .post-date {
+        font-size: 12px;
+    }
+}

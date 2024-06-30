@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Discussion Forum</h1>
+        <form action="logout.php" method="post" class="logoutForm">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="new-post">
+            <h2>Start a New Discussion</h2>
+            <!-- Corrected action to post_new_discussion.php -->
+            <form id="newPostForm" action="post_new_discussion.php" method="post">
+                <textarea name="content" id="newPostContent" placeholder="What's on your mind?" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div id="posts" class="posts">
+            <!-- Posts will be loaded here -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
